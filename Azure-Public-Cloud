@@ -1,0 +1,94 @@
+Here's a simplified flow diagram of Azure Virtual Network (VNet) components:Azure Virtual Network (VNet)
+Virtual Network Gateway (VNG)
+Connects VNet to on-premises networks or other VNets
+Subnets
+Divide VNet into smaller, manageable sections
+Network Security Groups (NSGs)
+Control inbound/outbound traffic
+Network Interfaces (NICs)
+Connect VMs to VNet
+Route Tables
+Define traffic routing rules
+Azure Load Balancer
+Distributes traffic across resources
+Application Gateway
+Web traffic management
+Connectivity
+Internet
+Public access
+On-premises network
+Site-to-site VPN
+Other VNets
+VNet peering
+Flow Diagram
+                                      +---------------+
+                                      |  Internet    |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Application  |
+                                      |  Gateway      |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Azure Load  |
+                                      |  Balancer     |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Virtual      |
+                                      |  Network      |
+                                      |  (VNet)       |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Subnets     |
+                                      |  (Public/Private)|
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Network     |
+                                      |  Security    |
+                                      |  Groups (NSGs) |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Network     |
+                                      |  Interfaces  |
+                                      |  (NICs)      |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Route Tables |
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  Virtual     |
+                                      |  Network     |
+                                      |  Gateway (VNG)|
+                                      +---------------+
+                                             |
+                                             |
+                                             v
+                                      +---------------+
+                                      |  On-premises |
+                                      |  network     |
+                                      +---------------+
+Note: This diagram provides a simplified overview. Actual implementations may vary depending on specific requirements.
+Would you like more details or clarification?
